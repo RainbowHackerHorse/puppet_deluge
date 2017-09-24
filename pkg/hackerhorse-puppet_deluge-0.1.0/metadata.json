@@ -1,0 +1,22 @@
+{
+  "name": "hackerhorse-puppet_deluge",
+  "version": "0.1.0",
+  "author": "hackerhorse",
+  "summary": "Deluged",
+  "license": "BSD-2-Clause",
+  "source": "https://github.com/RainbowHackerHorse/puppet_deluge",
+  "project_page": "https://github.com/RainbowHackerHorse/puppet_deluge",
+  "issues_url": "https://github.com/RainbowHackerHorse/puppet_deluge/issues",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 4.0.0"}
+  ],
+  "data_provider": null,
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        ">= 13.10 <= 17.04"
+      ]
+    }
+  ]
+}
