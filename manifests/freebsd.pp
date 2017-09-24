@@ -1,5 +1,9 @@
 # Class: puppet_deluge::freebsd
-#
+# Lightweight deluge module to install a headless deluge server
+# This module contains FreeBSD specific functions
+# Module written by Rainbow <rainbow@hacker.horse>
+# Released under the 2-clause BSD license.
+# Depends on snonux/zfs
 #
 class puppet_deluge::freebsd {
     package { 'deluge-cli':
@@ -11,7 +15,7 @@ class puppet_deluge::freebsd {
     require => User['deluge'],
   }
   package { 'py27-service_identity':
-    ensure => installed,
+    ensure => latest,
   }
   file { '/usr/local/etc/rc.d/deluged':
     owner   => 'root',
@@ -29,12 +33,11 @@ class puppet_deluge::freebsd {
     unless  => 'test -f /home/deluge/.config/',
   }
   service { 'deluge':
-      enable  => true,
       ensure  => running,
+      enable  => true,
       require => File['/usr/local/etc/rc.d/deluged'],
-    }
-
-    zfs::create { 'zroot/torrents':
+  }
+  zfs::create { 'zroot/torrents':
     ensure     => present,
     filesystem => '/torrents',
   }

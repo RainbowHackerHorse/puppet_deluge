@@ -9,7 +9,12 @@ class puppet_deluge {
   }
   elsif $facts['os']['family'] == 'Linux' {
     if $facts['os']['distro'] == 'Ubuntu' {
-      include puppet_deluge::ubuntu
+      if $facts['os']['operatingsystemmajrelease'] >= '16' {
+        include puppet_deluge::ubuntu
+      }
+      else {
+        include puppet_deluge::ubuntulegacy
+      }
     }
   }
 
