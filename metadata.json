@@ -13,11 +13,11 @@
   "operatingsystem_support": [
     {
       "operatingsystem":"FreeBSD",
-      "operatingsystemrelease":[ ">= 10.0-RELEASE < 12.0-RELEASE"],
+      "operatingsystemrelease":[ ">= 10.0-RELEASE < 12.0-RELEASE"]
     },
     {
       "operatingsystem":"Ubuntu",
-      "operatingsystemrelease":[">= 13.10 <= 17.04"] 
+      "operatingsystemrelease":[ ">= 13.10 <= 17.04" ] 
     }
   ],
   "data_provider": null
