@@ -1,6 +1,6 @@
 {
   "name": "hackerhorse-puppet_deluge",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "author": "hackerhorse",
   "summary": "Deluged",
   "license": "BSD-2-Clause",
@@ -14,6 +14,8 @@
     {
       "operatingsystem":"FreeBSD",
       "operatingsystemrelease":[ ">= 10.0-RELEASE < 12.0-RELEASE"],
+    }
+    {
       "operatingsystem":"Ubuntu",
       "operatingsystemrelease":[">= 13.10 <= 17.04"] 
     }
