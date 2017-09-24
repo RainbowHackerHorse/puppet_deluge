@@ -1,0 +1,16 @@
+{
+  "Gemfile": "36c376f27539ded2a321b2bd432e843b",
+  "LICENSE": "39d0115029585fd2a07f1805f7dec8b4",
+  "README.md": "2423bea1c4e9da8a6853ee83a15dfd2f",
+  "Rakefile": "f4692851f7e9afcdb02721319e3f18b9",
+  "files/auth": "40852add33c21cb82f48450d1489c54f",
+  "files/core.conf": "f3caadd1013f98d1c87a11543cd79242",
+  "files/freebsd_init.sh": "ed5fc0fb227e9fa49e97a0127c2cb907",
+  "manifests/freebsd.pp": "9053d1607f43effc7473b1ac9eb1c53d",
+  "manifests/init.pp": "15ab0a5f152c957fef47d4b4783455fb",
+  "manifests/ubuntu.pp": "b95d910970c7f7ca187cc380d4a1bd4f",
+  "manifests/ubuntulegacy.pp": "2fafbcea8d0015d9c06c338a10d6f11f",
+  "metadata.json": "4ffa766419783b36f172c8ab04b58c17",
+  "spec/classes/init_spec.rb": "e75fb3ea1fbd13dd02b90f01ba1b9961",
+  "spec/spec_helper.rb": "0db89c9a486df193c0e40095422e19dc"
+}
