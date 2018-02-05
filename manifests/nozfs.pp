@@ -6,5 +6,28 @@
 # Depends on puppetlabs/apt
 #
 class puppet_deluge::nozfs {
-  # resources
+    file { '/torrents':
+    ensure  => directory,
+    owner   => deluge,
+    mode    => '0644',
+    require => User['deluge'],
+  }
+  file { '/torrents/downloading':
+    ensure  => directory,
+    owner   => deluge,
+    mode    => '0644',
+    require => [User['deluge'], File['/torrents']],
+  }
+  file { '/torrents/files':
+    ensure  => directory,
+    owner   => deluge,
+    mode    => '0644',
+    require => [User['deluge'], File['/torrents']],
+  }
+  file { '/torrents/completed':
+    ensure  => directory,
+    owner   => deluge,
+    mode    => '0644',
+    require => [User['deluge'], File['/torrents']],
+  }
 }
