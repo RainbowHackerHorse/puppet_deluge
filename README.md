@@ -7,6 +7,7 @@
 3. [I Can't Connect?](#I-cant-connect)
 4. [Limitations - OS compatibility, etc.](#limitations)
 5. [Development - Guide for contributing to the module](#contribute)
+6. [Changelog](#changelog)
 
 ## What does this do?
 This is a puppet module, written to allow you to install the Deluge torrent client
@@ -16,8 +17,6 @@ Please note, this supersedes the existing module hackerhorse/puppet_freebsd_delu
 By default, remote access is turned off, but can easily be enabled (see below).
 
 ## Requirements
-For FreeBSD support, this module requires you to also have installed Snonux's ZFS module, available at 
-https://github.com/snonux/puppet-modules
 For Ubuntu, please ensure you install puppetlabs/apt
 
 ## I can't connect!
@@ -37,3 +36,16 @@ Currently, this module runs on:
 ## Contribute
 You can contribute by forking https://github.com/RainbowHackerHorse/puppet_deluge
 and opening a PR.
+
+## Changelog
+
+Changes in 0.2.0:
+- Removed external ZFS module dependency, as Puppet supports ZFS
+- Move non-ZFS directory entries to nozfs.pp
+- Fix incorrect file locations in nozfs.pp (originally the Ubuntu defaults)
+
+Changes in 0.1.1:
+- Add Ubuntu Linux support
+
+Changes in 0.1.0:
+- Initial release. Cleanup from hackerhorse/puppet_freebsd_deluge
