@@ -1,8 +1,8 @@
 {
   "name": "hackerhorse-puppet_deluge",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "hackerhorse",
-  "summary": "Deluged",
+  "summary": "Deluged on FreeBSD and Linux",
   "license": "BSD-2-Clause",
   "source": "https://github.com/RainbowHackerHorse/puppet_deluge",
   "project_page": "https://github.com/RainbowHackerHorse/puppet_deluge",
