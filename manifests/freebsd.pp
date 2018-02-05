@@ -33,8 +33,8 @@ class puppet_deluge::freebsd {
     unless  => 'test -f /home/deluge/.config/',
   }
   service { 'deluge':
-      ensure  => running,
-      enable  => true,
-      require => File['/usr/local/etc/rc.d/deluged'],
+    ensure  => running,
+    enable  => true,
+    require => File['/usr/local/etc/rc.d/deluged'],
   }
 }
