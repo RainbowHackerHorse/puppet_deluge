@@ -30,28 +30,4 @@ class puppet_deluge::ubuntu {
   apt::ppa { 'ppa:deluge-team/ppa':
     require => Package['python-software-properties'],
   }
-  file { 'zroot/torrents':
-    ensure  => directory,
-    owner   => deluge,
-    mode    => '0644',
-    require => User['deluge'],
-  }
-  file { 'zroot/torrents/downloading':
-    ensure  => directory,
-    owner   => deluge,
-    mode    => '0644',
-    require => User['deluge'],
-  }
-  file { 'zroot/torrents/files':
-    ensure  => directory,
-    owner   => deluge,
-    mode    => '0644',
-    require => User['deluge'],
-  }
-  file { 'zroot/torrents/completed':
-    ensure  => directory,
-    owner   => deluge,
-    mode    => '0644',
-    require => User['deluge'],
-  }
 }
