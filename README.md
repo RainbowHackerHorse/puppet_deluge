@@ -18,6 +18,9 @@ By default, remote access is turned off, but can easily be enabled (see below).
 
 ## Requirements
 For Ubuntu, please ensure you install puppetlabs/apt
+For ZFS systems, ensure you include puppet_deluge:zfs
+For non-ZFS systems, please include puppet_deluge:nozfs
+### THIS MODULE WILL NOT WORK IF YOU DO NOT SELECT ONE OF THESE.
 
 ## I can't connect!
 Did you edit `./files/auth` and `./files/core.conf`?
@@ -40,8 +43,9 @@ and opening a PR.
 ## Changelog
 
 Changes in 0.2.0:
-- Removed external ZFS module dependency, as Puppet supports ZFS
+- Removed external ZFS module dependency and switch to upstream puppet ZFS support, as Puppet supports ZFS.
 - Move non-ZFS directory entries to nozfs.pp
+- Add zfs.pp for ZFS specifics
 - Fix incorrect file locations in nozfs.pp (originally the Ubuntu defaults)
 
 Changes in 0.1.1:
